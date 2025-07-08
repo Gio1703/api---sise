@@ -68,7 +68,7 @@ model medicos {
 
 model pacientes {
   id_paciente         Int             @id @default(autoincrement())
-  nombres             String          @db.VarChar(100)
+  nombres             String          @db.VarChar(120)
   apellidos           String          @db.VarChar(100)
   edad                Int?
   fecha_nacimiento    DateTime?       @db.Date
